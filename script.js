@@ -11,3 +11,11 @@ function scrollToTop() {
     behavior: "smooth", // Use 'smooth' to enable smooth scrolling
   });
 }
+function scrollToSection(sectionId) {
+  const targetSection = document.getElementById(sectionId);
+  if (targetSection) {
+    targetSection.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+}
