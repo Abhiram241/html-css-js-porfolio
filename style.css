@@ -1,0 +1,388 @@
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #f5eee6;
+  color: #3d3b40;
+}
+
+html {
+  scroll-behavior: smooth; /*Check more*/
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* transition(revisit) */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Desk nav */
+
+nav,
+.nav-links {
+  display: flex;
+} /*just remember dabba ke andar dabba */
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: white;
+  color: black;
+}
+a:hover {
+  color: #3e3232;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo {
+  font-size: 2rem;
+  color: black;
+}
+
+.logo:hover {
+  cursor: default;
+}
+.normy {
+  color: black;
+}
+.normy:hover {
+  cursor: default;
+}
+
+/* ham munu */
+#hamburger-nav {
+  display: none;
+  /* In desktop view ham is hidden */
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  /* This part is basically box of flexbox */
+}
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+  /* Here i am defining the span */
+}
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background-color: white;
+  width: fit-content;
+  /* Tried to add padding here and it glitched */
+  max-height: 0;
+  /* Max height is used later  */
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  /* try changing later */
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+.menu-links.open {
+  max-height: 300px;
+  /* I am defining the height here */
+  background-color: #f8f4ec;
+  padding: 20px;
+  border-radius: 20%;
+  /* The last 3 lines are my additions */
+}
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child {
+  transform: none;
+}
+.hamburger-icon span:nth-child(1) {
+  opacity: 1;
+}
+.hamburger-icon span:last-child {
+  transform: none;
+}
+
+/* Sections */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0px 10rem;
+  box-sizing: border-box;
+  /* Learn what is above */
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+  /* Remove this and check */
+}
+
+/* Profile section */
+
+#profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 5rem;
+  height: 80vh;
+}
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  /* display: flex; */
+  align-self: center;
+  text-align: center;
+  /* Let us see again later */
+}
+.section__p p {
+  font-weight: 600;
+}
+.section__text__p1 {
+  text-align: center;
+}
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 3rem;
+  text-align: center;
+  /* center is not doing anything */
+}
+.centerit {
+  display: flex;
+  justify-content: center;
+}
+#social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #bfcfe7; */
+  border-radius: 2rem;
+  width: 10rem;
+  height: 100px;
+  margin-top: 1rem;
+  gap: 1rem;
+
+  /* Check and try adding a background color */
+  /* Doesnt seem to do anything */
+}
+.icon {
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  height: 3rem;
+  transition: all 0.3s ease, color 300ms ease;
+}
+.iconsp {
+  cursor: pointer;
+  height: 3rem;
+  transition: all 0.3s ease, color 300ms ease;
+}
+.iconsp:hover {
+  scale: 1.2;
+  transition: all 0.3s ease, color 300ms ease;
+}
+
+/* btns */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0rem;
+  /* i think by default it is center */
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600px;
+  /* transition: all 0.3s ease, color 300ms ease; */
+  /* Added transition property */
+  padding: 1rem;
+  width: rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+  scale: 1.08;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+.btn-color-2 {
+  background: none;
+  /* this is to remove the default background color*/
+}
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* About */
+
+#about {
+  position: relative;
+}
+.about-containers {
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  /* why this? */
+}
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+.about-details-container,
+.about-containers {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+/* #arrow {
+  position: relative;
+  top: 25rem;
+} */
+
+.details-containers {
+  padding: 1rem;
+  flex: 1;
+  background: #fff8e3;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* Experiance section  */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: black;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+article .icon {
+  cursor: default;
+  margin: 0;
+}
+article h3,
+p {
+  color: black;
+}

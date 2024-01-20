@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaquery.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abhiram</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li>
+            <a href="https://github.com/Abhiram241" target="_blank">Github</a>
+          </li>
+          <li>
+            <a href="https://linktr.ee/abhiramys" target="_blank">LinkTree</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav id="hamburger-nav">
+      <div class="logo">Abhiram</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav> -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profiels/profile-pic (2).png" alt="Abhiram" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 normy">Hello, I'm</p>
+        <h1 class="title normy">Abhiram</h1>
+        <p class="section__text__p2 normy">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/profile.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact me!
+          </button>
+        </div>
+        <div class="centerit">
+          <div id="social-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="linkedin"
+              class="icon iconsp"
+              onclick="window.open('https://www.linkedin.com/in/abhiram-ys-8a3a2b266', '_blank')"
+            />
+            <img
+              src="./assets/github.png"
+              alt="linkedin"
+              class="icon iconsp"
+              onclick="window.open('https://www.google.com/', '_blank')"
+            />
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        id="arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1 normy">Get to know more</p>
+      <h1 class="title normy">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="abt-pic" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-containers">
+              <img src="./assets/experience.png" alt="" class="icon" />
+              <h3 class="normy">Experience</h3>
+              <p class="normy">Computer<br />Engineering</p>
+            </div>
+            <div class="details-containers">
+              <img src="./assets/education.png" alt="" class="icon" />
+              <h3 class="normy">Education</h3>
+              <p class="normy">Btech<br />KSIT,Banglore</p>
+            </div>
+          </div>
+          <div class="text-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            adipisci soluta quis cum eum asperiores quia aspernatur aliquid
+            cupiditate, debitis neque laborum est, fuga voluptatum possimus
+            officiis et iusto eius dolores atque minus eos perferendis doloribus
+            explicabo. Nobis reiciendis rerum quaerat ex vero ullam, consectetur
+            aspernatur est, at voluptatibus ut!
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1 normy">Explore My</p>
+      <h1 class="title normy">experience</h1>
+      <div class="experience-details-cotainer">
+        <div class="about-containers">
+          <div class="details-containers">
+            <h2 class="experience-sub-title normy">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>JS</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>Design</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-containers">
+            <h2 class="experience-sub-title normy">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>Nodejs</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>Postgresql</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>php</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>azzure</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>firebase</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="exp icon "
+                  class="icon"
+                />
+                <div>
+                  <h3>Blockchain</h3>
+                  <p>experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/54391.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="scrollToTop()"
+      />
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
